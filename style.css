@@ -1,0 +1,177 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  padding-bottom: 20px;
+  background-color: #3f1d38;
+}
+h1 {
+  font-weight: bolder;
+}
+.cards {
+  margin-top: 30px;
+  padding-left: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+.cardDisplay {
+  display: flex;
+  width: 45%;
+  height: 60%;
+  background-color: #a2678a;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+.NoDataInfo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+.NoDataInfo p{
+  font-size: 20px;
+  font-weight: 900;
+  color:black;
+
+}
+.robo {
+  background-color: #4d3c77;
+  width: 100%;
+}
+.robo img {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+.header {
+  background-color: rgba(255, 255, 255, 0.5);
+  top: 0;
+  width: 100%;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  height: 70px;
+  text-align: center;
+  z-index: 3;
+}
+.searchBox input {
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px;
+  outline: none;
+  border: none;
+}
+
+.info {
+  background-color: #e19898;
+  width: 100%;
+  padding-top: 50px;
+}
+.info h3 {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 25px;
+  padding-bottom: 10px;
+  margin-bottom: 50px;
+}
+.info p {
+  padding-left: 50px;
+  color: rgba(0, 0, 0, 1);
+  font-size: 15px;
+}
+.info .add {
+  margin-left: 60px;
+  padding: 0;
+}
+.info #contact {
+  color: black;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    width: 100%;
+     height: 100%;
+     background-color: #3f1d38;
+  }
+  .header {
+    background-color: rgba(255, 255, 255, 0.5);
+    top: 0;
+    width: 100%;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    z-index: 3;
+  }
+  .searchBox input {
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    gap: 40px;
+  }
+  .cardDisplay {
+    width: 90%;
+    height: 60%;
+    background-color: transparent;
+    display: block;
+  }
+  .robo {
+    background-color: white;
+    width: 100%;
+    border-radius: 0;
+    display: block;
+    align-items: center;
+    padding: 10px;
+  }
+  .robo img {
+    width: 100%;
+    height: 100%;
+    background-color: brown;
+    border-radius: 0;
+  }
+
+  .info {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  .info h3 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
+    padding-bottom: 5px;
+    margin-bottom: 50px;
+  }
+  .info p {
+    padding-left: 50px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 20px;
+  }
+  .info .add {
+    margin-left: 60px;
+    padding: 0;
+  }
+  .info #contact {
+    color: black;
+    font-size: 20px;
+  }
+}
